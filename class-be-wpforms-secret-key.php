@@ -97,7 +97,7 @@ class BE_WPForms_Secret_Key {
         jQuery(document).ready(function($){
 			<?php
 			foreach( $secret_keys as $form_id => $value ) {
-				echo '$(\'#wpforms-' . $form_id . ' .wpforms-field.secret-key\').val(\'' . $value . '\');';
+				echo '$(\'#wpforms-' . $form_id . ' .wpforms-field.secret-key input\').val(\'' . $value . '\');';
 			}
 			?>
         });
